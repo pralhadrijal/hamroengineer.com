@@ -3,43 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thank You - Offer Received</title>
+  <title>Thank You | hamroengineer.com</title>
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      font-family: system-ui, -apple-system, sans-serif;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
       min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      margin: 0;
-      color: white;
+      background-color: #0f172a;
+      background-image: 
+        linear-gradient(rgba(14, 165, 233, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(14, 165, 233, 0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      color: #e2e8f0;
       text-align: center;
-      padding: 20px;
+      padding: 24px;
     }
+
     .box {
-      background: rgba(255,255,255,0.15);
-      backdrop-filter: blur(10px);
-      padding: 40px;
-      border-radius: 20px;
-      max-width: 450px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(14, 165, 233, 0.3);
+      padding: 48px 40px;
+      border-radius: 16px;
+      max-width: 460px;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
     }
-    h1 { margin-bottom: 15px; font-size: 2rem; }
-    p { font-size: 1.15rem; opacity: 0.95; }
+
+    .badge {
+      display: inline-block;
+      background: rgba(74, 222, 128, 0.15);
+      color: #4ade80;
+      font-size: 0.75rem;
+      padding: 4px 12px;
+      border-radius: 20px;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 16px;
+      color: white;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #94a3b8;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+
     a {
       display: inline-block;
-      margin-top: 25px;
-      color: white;
-      text-decoration: underline;
+      margin-top: 28px;
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    a:hover {
+      border-bottom-color: #38bdf8;
     }
   </style>
 </head>
 <body>
   <div class="box">
+    <div class="badge">OFFER RECEIVED</div>
     <h1>Thank You!</h1>
     <p>Your offer has been submitted successfully.</p>
     <p>We will review it and get back to you soon.</p>
-    <a href="/">← Back to homepage</a>
+    <a href="/">← Return to homepage</a>
   </div>
 </body>
 </html>
